@@ -1,0 +1,25 @@
+# General environment config
+export CC=icc
+export CXX=icpc
+export FC=ifort
+
+# OpenMP config
+export OMP_NUM_THREADS=$LSB_DJOB_NUMPROC
+export OMP_STACKSIZE=500m
+
+# OpenMPI config
+export OMPI_MCA_btl_vader_single_copy_mechanism=none
+
+# GEOS-Chem environment variables
+if [ -x "$(command -v nc-config)" ]; then
+	export GC_BIN=$(nc-config --prefix)/bin
+	export GC_INCLUDE=$(nc-config --prefix)/include
+	export GC_LIB=$(nc-config --prefix)/lib
+fi
+
+if [ -x "$(command -v nf-config)" ]; then
+	export GC_F_BIN=$(nf-config --prefix)/bin
+	export GC_F_INCLUDE=$(nf-config --prefix)/include
+	export GC_F_LIB=$(nf-config --prefix)/lib
+fi
+
