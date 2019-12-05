@@ -3,10 +3,14 @@
 2. Run the following snippet
     ```
     cd ~
-    git clone https://github.com/Atmospheric-Composition-Analysis-Group/compute1
+    wget -qO- https://github.com/Atmospheric-Composition-Analysis-Group/compute1/archive/master.tar.gz | tar -xzf -
+    echo "export source $HOME/compute1/head-node.rc" >> $HOME/.bashrc
     ```
-4. Add the following line to the end of `~/.bashrc`
-    ```
-    source $HOME/compute1/head-node.rc
-    ```
-5. Edit `~/compute1/head-node.rc` and replace `lbindle` in the `LSF_DOCKER_VOLUMES` variable with the name of your personal projects directory on storage1.
+4. Edit `~/compute1/head-node.rc` and replace `lbindle` in the `LSF_DOCKER_VOLUMES` variable with the name of your personal projects directory on storage1.
+
+## To update
+In the future, when you want to update these scripts, do the following
+```
+cd ~
+wget -qO- https://github.com/Atmospheric-Composition-Analysis-Group/compute1/archive/master.tar.gz | tar -xzf -
+```
