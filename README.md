@@ -1,7 +1,6 @@
 ## Getting started
 1. Log into compute1
 2. Run the following snippet
-3 Clone this repo
     ```
     cd ~
     git clone https://github.com/Atmospheric-Composition-Analysis-Group/compute1
