@@ -10,19 +10,16 @@
 
 
 ## Running interactive jobs
-Do
 ```
 bsub < compute1/interactive.sh
 ```
 
 ## Running interactive matlab jobs
-Do
 ```
 bsub < compute1/matlab.sh
 ```
 
 ## Running interactive python jobs
-Do
 ```
 bsub < compute1/python.sh
 ```
