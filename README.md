@@ -8,7 +8,26 @@
     ```
 4. Edit `~/compute1/head-node.rc` and replace `lbindle` in the `LSF_DOCKER_VOLUMES` variable with the name of your personal projects directory on storage1.
 
-## To update
+
+## Running interactive jobs
+Do
+```
+bsub < compute1/interactive.sh
+```
+
+## Running interactive matlab jobs
+Do
+```
+bsub < compute1/matlab.sh
+```
+
+## Running interactive python jobs
+Do
+```
+bsub < compute1/python.sh
+```
+
+## To update these scripts
 In the future, when you want to update these scripts, do the following
 ```
 cd ~
