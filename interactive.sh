@@ -1,9 +1,0 @@
-#!/bin/bash
-#BSUB -Is
-#BSUB -n 8
-#BSUB -R "rusage[mem=40000] span[hosts=1]"
-#BSUB -q rvmartin-interactive
-#BSUB -a 'docker(registry.gsc.wustl.edu/sleong/base-engineering)'
-
-cd /my-projects
-zsh

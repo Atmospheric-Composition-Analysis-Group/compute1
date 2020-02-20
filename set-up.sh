@@ -32,6 +32,10 @@ fi
 ' >> ~/.bashrc
 fi
 
+# Remove any old configuration
+rm -rf ~/compute1
+sed 's#source  *[a-zA-Z0-9_-\./]*compute1/head\-node\.rc##g' -i .bashrc
+
 # Create links to my-projects and Shared
 ln -s $MY_PROJECTS_DIR /my-projects &> /dev/null
 ln -s /storage1/fs1/rvmartin/Active/Shared &> /dev/null
