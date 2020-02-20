@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 # LSF docker config
-export LSF_DOCKER_VOLUMES="/storage1/fs1/rvmartin/Active/GEOS-Chem-shared/ExtData:/ExtData /storage1/fs1/rvmartin/Active/lbindle:/my-projects /storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses"
+export LSF_DOCKER_VOLUMES="/storage1/fs1/rvmartin/Active/GEOS-Chem-shared/ExtData:/ExtData /storage1/fs1/rvmartin/Active/lbindle:/my-projects /storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses /home/IDC-ID-74944:/home/IDC-ID-74944"
 export LSF_DOCKER_SHM_SIZE=20G
+export LSF_DOCKER_NETWORK=host 
+export LSF_DOCKER_IPC=host
