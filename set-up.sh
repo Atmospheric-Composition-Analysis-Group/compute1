@@ -20,8 +20,8 @@ fi
 
 # Download head-node.rc and interactive.bsub
 wget -qO- https://raw.githubusercontent.com/Atmospheric-Composition-Analysis-Group/compute1/master/head-node.rc | sed "s#MY_PROJECTS_DIR=[a-zA-Z0-9_-\./]*#MY_PROJECTS_DIR=$MY_PROJECTS_DIR#g" > head-node.rc
-wget https://raw.githubusercontent.com/Atmospheric-Composition-Analysis-Group/compute1/master/interactive.bsub
-wget https://raw.githubusercontent.com/Atmospheric-Composition-Analysis-Group/compute1/master/.zshrc
+wget -q https://raw.githubusercontent.com/Atmospheric-Composition-Analysis-Group/compute1/master/interactive.bsub
+wget -q https://raw.githubusercontent.com/Atmospheric-Composition-Analysis-Group/compute1/master/.zshrc
 
 # Modify ~/.bashrc to load head-node.rc
 if ! $(grep -q '# Source ~/head-node.rc if we are on the head-node' ~/.bashrc); then
