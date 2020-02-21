@@ -1,6 +1,6 @@
 #!/bin/bash
 MY_PROJECTS_DIR=/storage1/fs1/rvmartin/Active/lbindle
-export LSF_DOCKER_VOLUMES="$MY_PROJECTS_DIR:/my-projects /storage1/fs1/rvmartin/Active/GEOS-Chem-shared/ExtData:/ExtData /storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses"
+export LSF_DOCKER_VOLUMES="$MY_PROJECTS_DIR:/my-projects /storage1/fs1/rvmartin/Active/Shared:/Shared /storage1/fs1/rvmartin/Active/GEOS-Chem-shared/ExtData:/ExtData /storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses"
 export LSF_DOCKER_SHM_SIZE=20G
 export LSF_DOCKER_NETWORK=host 
 export LSF_DOCKER_IPC=host
