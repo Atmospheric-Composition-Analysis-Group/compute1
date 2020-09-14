@@ -6,4 +6,4 @@
 #BSUB -a 'docker(registry.gsc.wustl.edu/sleong/base-engineering)'
 
 cd /my-projects
-zsh
+bash
