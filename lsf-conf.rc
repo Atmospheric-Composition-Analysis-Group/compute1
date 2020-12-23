@@ -6,7 +6,7 @@ MY_PROJECTS_DIR=/storage1/fs1/rvmartin/Active/wustlkey
 # LSF_DOCKER_VOLUMES is the variable that connects paths on Storage1 to paths in your container. It
 # contains space-separated declarations like path1:path2, where path1 is the path on Storage1 and
 # path2 is where it will be in your container. Add/subtract from LSF_DOCKER_VOLUMES as you need.
-export LSF_DOCKER_VOLUMES="$MY_PROJECTS_DIR:/my-projects /storage1/fs1/rvmartin/Active/Shared:/Shared /storage1/fs1/rvmartin/Active/GEOS-Chem-shared/ExtData:/ExtData /storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses"
+export LSF_DOCKER_VOLUMES="$MY_PROJECTS_DIR:/my-projects /storage1/fs1/rvmartin/Active/Shared:/Shared /storage1/fs1/rvmartin/Active/GEOS-Chem-shared/ExtData:/ExtData /storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses /storage1/fs1/rvmartin/Active:/storage1/fs1/rvmartin/Active"
 
 # Other LSF configrations
 export LSF_DOCKER_SHM_SIZE=20G
