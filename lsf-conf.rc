@@ -9,4 +9,4 @@ export LSF_DOCKER_VOLUMES="/storage1/fs1/rvmartin/Active:/storage1/fs1/rvmartin/
 export LSF_DOCKER_SHM_SIZE=20G
 export LSF_DOCKER_NETWORK=host 
 export LSF_DOCKER_IPC=host
-export LSB_DEFAULT_JOBGROUP=rvmartin
+export LSB_SUB_USER_GROUP=compute-rvmartin
