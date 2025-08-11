@@ -4,6 +4,7 @@
 # contains space-separated declarations like path1:path2, where path1 is the path on Storage1 and
 # path2 is where it will be in your container. Add/subtract from LSF_DOCKER_VOLUMES as you need.
 export LSF_DOCKER_VOLUMES="/storage1/fs1/rvmartin/Active:/storage1/fs1/rvmartin/Active /storage1/fs1/rvmartin/Archive:/storage1/fs1/rvmartin/Archive /scratch1/fs1/rvmartin/bs6:/scratch1/fs1/rvmartin/bs6 $HOME:$HOME"
+export LSF_DOCKER_VOLUMES="/storage1/fs1/rvmartin/Active/acag-licenses:/opt/intel/licenses $LSF_DOCKER_VOLUMES" # Licenses for intel-compiler docker
 
 # Other LSF configrations
 export LSF_DOCKER_SHM_SIZE=20G
